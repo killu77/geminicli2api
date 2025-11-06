@@ -43,6 +43,19 @@ DEFAULT_SAFETY_SETTINGS = [
 # Base Models (without search variants)
 BASE_MODELS = [
     {
+        "name": "models/gemini-3-pro-preview-11-2025",
+        "version": "001",
+        "displayName": "Gemini 3.0 Pro Preview 11-2025",
+        "description": "Preview version of Gemini 3.0 Pro from November 2025",
+        "inputTokenLimit": 1048576,  # 注意：这些值是基于现有pro模型的推测，请根据官方信息修改
+        "outputTokenLimit": 65535, # 注意：这些值是基于现有pro模型的推测，请根据官方信息修改
+        "supportedGenerationMethods": ["generateContent", "streamGenerateContent"],
+        "temperature": 1.0,
+        "maxTemperature": 2.0,
+        "topP": 0.95,
+        "topK": 64
+    },
+    {
         "name": "models/gemini-2.5-pro-preview-03-25",
         "version": "001",
         "displayName": "Gemini 2.5 Pro Preview 03-25",
